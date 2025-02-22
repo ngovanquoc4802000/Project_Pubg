@@ -81,4 +81,80 @@
   fill: #fff;
 }
 
+.patch-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(31, 32, 34);
+  padding: 40px;
+  color: #fff;
+  height: 80vh;
+  position: relative;
+}
+.patch-note__container {
+  position: absolute;
+  top: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  background: #2C2A27;
+}
+.patch-note__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 80px;
+  width: 800px;
+}
+.patch-note__icon:hover {
+  color: rgb(242, 170, 0);
+  cursor: pointer;
+}
+.patch-note__title {
+  font-size: 3rem;
+  margin-bottom: 100px;
+}
+.patch-note__tabs {
+  display: flex;
+  gap: 5px;
+}
+.patch-note__tab {
+  padding: 5px 20px;
+  background: #2C2A27;
+  color: #545351;
+  border: 2px solid #545351;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  width: 110px;
+  border-radius: 4px;
+}
+.patch-note__tab--active {
+  color: rgb(242, 170, 0);
+  border: 1px solid rgb(242, 170, 0);
+}
+.patch-note__update {
+  margin-top: 40px;
+  font-size: 2rem;
+}
+.patch-note__description {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  color: #545351;
+  text-align: left;
+}
+.patch-note__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  overflow: hidden;
+}
+.patch-note__image img {
+  height: 650px;
+}
+
 /*# sourceMappingURL=main.css.map */

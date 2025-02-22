@@ -81,3 +81,79 @@
 }
 
 //Patch note
+.patch-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: c.$dark-gray;
+  padding: 40px;
+  color: c.$white;
+  height: 80vh;
+  position: relative;
+  &__container {
+    position: absolute;
+    top:-20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    background: c.$gray;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 80px;
+    width: 800px;
+  }
+  &__icon:hover {
+    color: c.$yellow;
+    cursor: pointer;
+  }
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 100px;
+  }
+  &__tabs {
+    display: flex;
+    gap: 5px;
+  }
+  &__tab {
+    padding: 5px 20px;
+    background: c.$gray;
+    color: c.$light-gray;
+    border: 2px solid c.$light-gray;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    width:110px;
+    border-radius: 4px;
+    &--active {
+      color: c.$yellow;
+      border: 1px solid c.$yellow;
+    }
+  }
+  &__update {
+    margin-top: 40px;
+    font-size: 2rem;
+  }
+  &__description {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    color: c.$light-gray;
+    text-align: left;
+  }
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:700px;
+    overflow: hidden;
+    img {
+      height: 650px;
+
+    }
+  }
+}
