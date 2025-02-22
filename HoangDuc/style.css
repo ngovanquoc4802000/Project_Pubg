@@ -14,6 +14,7 @@
     height: 150px;
     color: white;
     position: relative;
+    margin-bottom: 10px;
 }
 .header ul li a::after{
     position: fixed;
@@ -57,7 +58,6 @@
     margin: 15px;
     display: flex;
     justify-content: center;
-    display: flex;
 
 }
 .header ul li a{
@@ -65,12 +65,43 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 5px;
+    margin: 10px;
     font-size: 20px;
+    padding-right: 10px;
 }
 .header ul li a span {
     margin: 5px;
 }
+.header ul li:nth-child(1) a span{
+    padding-right: 10px;
+}
 .header li a:hover {
     color: rgba(255, 145, 0, 0.932);
 }
+.footer {
+    background-color: black;
+}
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li{
+    margin: 10px;
+    width: 40px;
+    height: auto;
+    border: 1px solid black;
+}
+.footer ul li:hover {
+    background-color: azure;
+    border-radius: 10%;
+}
+.footer ul li:nth-child(5) {
+    width: 35px;
+}
+.footer .image {
+    margin-left: 150px;
+    width: 160px;
+    height: auto;
+}
+
