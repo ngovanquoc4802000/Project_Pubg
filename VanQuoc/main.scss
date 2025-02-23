@@ -16,10 +16,24 @@ body {
 }
 .section-content {
   position: relative;
+  .news {
+    font-weight: 700;
+  }
   .img-news-event {
     position: absolute;
     top: 1px;
+    .hover-post {
+      position: relative;
+      width: 100%;
+      cursor: pointer;
+      transition: 2s ease-in-out;
+    }
     .card {
+      &:hover {
+        transition: 2s ease-in-out;
+        transform: translate(-12px);
+        filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.15));
+      }
       .card-body {
         position: relative;
         padding: 0;
@@ -35,7 +49,7 @@ body {
           .title-content-free {
             color: #fff;
             font-weight: 700;
-            font-size: 23px;
+            font-size: 15px;
             line-height: 150%;
           }
           .title-content-event {
@@ -124,18 +138,45 @@ body {
   }
 }
 .banner-content {
-  position: relative;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: -184px;
+  .banner {
+    margin-inline: auto;
+    width: 1648px;
+    max-width: 100%;
+    height: 280px;
+  }
   .banner-inner {
     position: absolute;
     top: 1px;
-    .title {
-      
+    .title-content-left-parent {
+      position: relative;
+      margin: auto;
     }
-    .image {
-      flex: 1 1 990px;
+    .image-content-right-parent {
+      position: relative;
+      top: -68px;
+      right: 130px;
+      .image-content-right {
+        max-width: 128%;
+        height: 348px;
+      }
+    }
+  }
+  @media (max-width: 998px) {
+    .banner-inner {
+      position: absolute;
       display: flex;
-      align-items: flex-end;
-      height: 100%;
+      justify-content: center;
+      bottom: -250px;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .banner-content {
+    .banner {
     }
   }
 }
