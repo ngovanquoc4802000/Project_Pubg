@@ -13,15 +13,18 @@ body {
   font-family: "Roboto Condensed", "Noto Sans", "Noto Sans KR", "Noto Sans TC", "Noto Sans SC", "Noto Sans JP", "Noto Sans Thai", "Noto Sans Arabic", blinkmacsystemfont, -apple-system, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
-.section-content {
+.background-body {
   position: relative;
+  width: 100%;
 }
+
 .section-content .news {
   font-weight: 700;
 }
 .section-content .img-news-event {
   position: absolute;
   top: 1px;
+  width: 100%;
 }
 .section-content .img-news-event .hover-post {
   position: relative;
@@ -136,10 +139,9 @@ body {
 }
 
 .banner-content {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
-  bottom: -184px;
 }
 .banner-content .banner {
   margin-inline: auto;
@@ -164,12 +166,24 @@ body {
   max-width: 128%;
   height: 348px;
 }
-@media (max-width: 998px) {
-  .banner-content .banner-inner {
-    position: absolute;
+@media (max-width: 765px) {
+  .background-body {
+    height: 1700px;
+    width: 100%;
+  }
+  .banner-content {
+    position: relative;
     display: flex;
     justify-content: center;
-    bottom: -250px;
+    top: -204px;
+  }
+  .banner-content .banner .banner-inner .image-content-right-parent {
+    position: relative;
+    top: -68px;
+    right: 58px;
+  }
+  .banner-content .banner .banner-inner .image-content-right-parent .image-content-right {
+    height: 256px;
   }
 }
 

@@ -14,14 +14,18 @@ body {
     cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", helvetica, arial,
     sans-serif;
 }
-.section-content {
+.background-body {
   position: relative;
+  width: 100%;
+}
+.section-content {
   .news {
     font-weight: 700;
   }
   .img-news-event {
     position: absolute;
     top: 1px;
+    width: 100%;
     .hover-post {
       position: relative;
       width: 100%;
@@ -138,10 +142,9 @@ body {
   }
 }
 .banner-content {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
-  bottom: -184px;
   .banner {
     margin-inline: auto;
     width: 1648px;
@@ -166,17 +169,29 @@ body {
     }
   }
   @media (max-width: 998px) {
-    .banner-inner {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      bottom: -250px;
-    }
   }
 }
-@media only screen and (max-width: 1000px) {
+@media (max-width: 765px) {
+  .background-body {
+    height: 1700px;
+    width: 100%;
+  }
   .banner-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -204px;
     .banner {
+      .banner-inner {
+        .image-content-right-parent {
+          position: relative;
+          top: -68px;
+          right: 58px;
+          .image-content-right {
+            height: 256px;
+          }
+        }
+      }
     }
   }
 }
