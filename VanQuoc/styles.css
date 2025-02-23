@@ -1,0 +1,138 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+body {
+  font-family: "Roboto Condensed", "Noto Sans", "Noto Sans KR", "Noto Sans TC", "Noto Sans SC", "Noto Sans JP", "Noto Sans Thai", "Noto Sans Arabic", blinkmacsystemfont, -apple-system, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+.section-content {
+  position: relative;
+}
+.section-content .img-news-event {
+  position: absolute;
+  top: 1px;
+}
+.section-content .img-news-event .card .card-body {
+  position: relative;
+  padding: 0;
+}
+.section-content .img-news-event .card .card-body .background-content-items {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+.section-content .img-news-event .card .card-body .title-left {
+  position: absolute;
+  top: 1px;
+  padding: 2rem;
+}
+.section-content .img-news-event .card .card-body .title-left .title-content-free {
+  color: #fff;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 150%;
+}
+.section-content .img-news-event .card .card-body .title-left .title-content-event {
+  color: #777;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px 0px 64px;
+}
+.section-content .img-news-event .card .card-body .title-left .title-footer-one {
+  color: #f2aa00;
+  margin: 0px 24px 0px 0px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.section-content .img-news-event .card .card-body .title-left .title-footer-two {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 700;
+}
+.section-content .img-news-event .card .card-body .title-right {
+  position: absolute;
+  top: 1px;
+  padding: 2rem;
+}
+.section-content .img-news-event .card .card-body .title-right::after {
+  position: absolute;
+  content: "ĐANG DIỄN RA";
+  top: -16%;
+  left: 0%;
+  width: 180px;
+  height: 43px;
+  color: #000;
+  background-color: #f2aa00;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-content .img-news-event .card .card-body .title-right .mb-6 {
+  margin-bottom: 4rem;
+}
+.section-content .img-news-event .card .card-body .title-right .button-left {
+  color: #f2aa00;
+  background-color: #222222;
+  border: 1px solid #f2aa00;
+  padding: 0 24px;
+  font-size: 14px;
+  margin-right: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+}
+.section-content .img-news-event .card .card-body .title-right .button-right {
+  padding: 0 24px;
+  background-color: #222222;
+  color: #aaaaaa;
+  font-size: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 0.5px solid #aaaaaa;
+}
+.section-content .img-news-event .card .card-body .title-right .title-content-event {
+  color: #777;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px 0px 64px;
+}
+.section-content .img-news-event .card .card-body .title-right .title-footer-one {
+  color: #f2aa00;
+  margin: 0px 24px 0px 0px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.section-content .img-news-event .card .card-body .title-right .title-footer-two {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 700;
+}
+
+.banner-content {
+  position: relative;
+}
+.banner-content .banner-inner {
+  position: absolute;
+  top: 1px;
+}
+.banner-content .banner-inner .image {
+  flex: 1 1 990px;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
