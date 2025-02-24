@@ -168,6 +168,9 @@ $layout-breakpoint-smaller: 820px;
   }
 }
 @media (max-width: $layout-breakpoint-smaller) {
+  .patch-note__container {
+    top: 0;
+  }
   .patch-note__image{
     display: none;
   }

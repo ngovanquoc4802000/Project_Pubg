@@ -165,6 +165,9 @@
   }
 }
 @media (max-width: 820px) {
+  .patch-note__container {
+    top: 0;
+  }
   .patch-note__image {
     display: none;
   }
