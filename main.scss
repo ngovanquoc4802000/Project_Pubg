@@ -1,12 +1,137 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+    color: white;
+    position: relative;
+    margin-bottom: 10px;
+    .icon:hover {
+        color: rgb(255, 145, 0);
+        cursor: pointer;
+    }
+    .imgae {
+        width: 200px;
+        height: 120px;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        padding: 20px 20px 20px 20px;
+        margin: 30px;
+        position: relative;
+        li {
+            color: whitesmoke;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            a {
+                color: white;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                margin: 10px;
+                font-size: 20px;
+                padding-right: 10px;
+                &::after {
+                    position: fixed;
+                    width: 300px;
+                    height: 150px;
+                    background-color: rgb(255, 174, 0);
+                    top: 0;
+                    right: 0;
+                    content: "PLAY NOW";
+                    text-align: center;
+                    line-height: 150px;
+                    font-size: 24px;
+                    color: #000;
+                    cursor: pointer;
+                }
+                span {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+
+}
+.header ul li a:hover::after {
+    background-color: rgb(255, 102, 0);
+    cursor: pointer;
 }
 
-body {
-  font-size: 16px;
-  /* font-family: ; */
-  /* Font chữ (Tram anh đẩy vào)*/
+.header ul li:nth-child(1) a span{
+    padding-right: 10px;
 }
+.header li a:hover {
+    color: rgba(255, 145, 0, 0.932);
+}
+.footer {
+    min-height: 100vh;
+    background-color: black;
+    .list {
+        ul {
+            li {
+                &:hover {
+                    background-color: azure;
+                    border-radius: 10%;
+                }
+                margin: 10px;
+                width: 40px;
+                height: auto;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .image {
+        margin-left: 150px;
+        width: 160px;
+        height: auto;
+    }
+    .Links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .privacy {
+                color: white;
+                span {
+                    margin: 15px;
+                }
+            }
+    }
+    .copyright {
+        color: whitesmoke;
+        margin: 20px;
+        text-align: center;
+    }
+    .box {
+        border: 1px solid wheat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 50px;
+        margin: 25px auto;
+    }
+       
+}
+
+
+.footer ul li:nth-child(5) {
+    width: 35px;
+}
+
 
