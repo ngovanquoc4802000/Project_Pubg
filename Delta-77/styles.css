@@ -457,4 +457,194 @@ body {
   stroke: white;
 }
 
+/* section 2 */
+.background-body {
+  position: relative;
+  width: 100%;
+}
+
+.section-content .news {
+  font-weight: 700;
+}
+.section-content .img-news-event {
+  top: 1px;
+  width: 100%;
+}
+.section-content .img-news-event .hover-post {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  transition: 2s ease-in-out;
+}
+.section-content .img-news-event .card:hover {
+  transition: 2s ease-in-out;
+  transform: translate(-12px);
+  filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.15));
+}
+.section-content .img-news-event .card .card-body {
+  position: relative;
+  padding: 0;
+}
+.section-content .img-news-event .card .card-body .background-content-items {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+.section-content .img-news-event .card .card-body .title-left {
+  position: absolute;
+  top: 1px;
+  padding: 2rem;
+}
+.section-content .img-news-event .card .card-body .title-left .title-content-free {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+}
+.section-content .img-news-event .card .card-body .title-left .title-content-event {
+  color: #777;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px 0px 64px;
+}
+.section-content .img-news-event .card .card-body .title-left .title-footer-one {
+  color: #f2aa00;
+  margin: 0px 24px 0px 0px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.section-content .img-news-event .card .card-body .title-left .title-footer-two {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 700;
+}
+.section-content .img-news-event .card .card-body .title-right {
+  position: absolute;
+  top: 1px;
+  padding: 2rem;
+}
+.section-content .img-news-event .card .card-body .title-right::after {
+  position: absolute;
+  content: "ĐANG DIỄN RA";
+  top: -16%;
+  left: 0%;
+  width: 180px;
+  height: 43px;
+  color: #000;
+  background-color: #f2aa00;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-content .img-news-event .card .card-body .title-right .mb-6 {
+  margin-bottom: 4rem;
+}
+.section-content .img-news-event .card .card-body .title-right .button-left {
+  color: #f2aa00;
+  background-color: #222222;
+  border: 1px solid #f2aa00;
+  padding: 0 24px;
+  font-size: 14px;
+  margin-right: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+}
+.section-content .img-news-event .card .card-body .title-right .button-right {
+  padding: 0 24px;
+  background-color: #222222;
+  color: #aaaaaa;
+  font-size: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 0.5px solid #aaaaaa;
+}
+.section-content .img-news-event .card .card-body .title-right .title-content-event {
+  color: #777;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px 0px 64px;
+}
+.section-content .img-news-event .card .card-body .title-right .title-footer-one {
+  color: #f2aa00;
+  margin: 0px 24px 0px 0px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.section-content .img-news-event .card .card-body .title-right .title-footer-two {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 700;
+}
+
+.banner-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.banner-content .banner {
+  margin-inline: auto;
+  width: 1648px;
+  max-width: 100%;
+  height: 280px;
+}
+.banner-content .banner-inner {
+  position: absolute;
+  top: 1px;
+}
+.banner-content .banner-inner .title-content-left-parent {
+  position: relative;
+  margin: auto;
+}
+.banner-content .banner-inner .image-content-right-parent {
+  position: relative;
+  top: -68px;
+  right: 130px;
+}
+.banner-content .banner-inner .image-content-right-parent .image-content-right {
+  max-width: 128%;
+  height: 348px;
+}
+
+@media (max-width: 765px) {
+  .background-body {
+    height: 1700px;
+    width: 100%;
+  }
+  .banner-content {
+    position: relative;
+    justify-content: center;
+    top: -204px;
+  }
+  .banner-content .banner .banner-inner .image-content-right-parent {
+    position: relative;
+    top: -68px;
+    right: 58px;
+  }
+  .banner-content .banner .banner-inner .image-content-right-parent .image-content-right {
+    height: 256px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-content .banner-inner .title-content-left-parent h1 {
+    font-size: 40px !important;
+  }
+  .banner-content .banner-inner .title-content-left-parent p {
+    font-size: 14px !important;
+  }
+  .banner-content .banner-inner .image-content-right-parent .image-content-right {
+    width: 100% !important;
+    height: 126%;
+    position: relative;
+    top: 49px;
+    left: 111px;
+  }
+}
+/* Cộng đồng */
+
 /*# sourceMappingURL=styles.css.map */
