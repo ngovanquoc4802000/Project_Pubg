@@ -1,0 +1,78 @@
+body {
+  background-color: #1a202c;
+  background-color: #2d3748;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+body .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+body .card {
+  color: #ffffff;
+  background-image: url("images/back.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+}
+body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+body h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+body .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+body .card-header .profile {
+  display: flex;
+  align-items: center;
+}
+body .card-header .profile img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+body .card-header .profile span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+body .card-header i {
+  color: #3b82f6;
+}
+body .card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+body .card-text {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+body .card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+body .card-footer .interactions {
+  display: flex;
+  align-items: center;
+}
+body .card-footer .interactions i {
+  margin-right: 5px;
+}
+body .card-footer .interactions .likes, body .card-footer .interactions .comments {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
