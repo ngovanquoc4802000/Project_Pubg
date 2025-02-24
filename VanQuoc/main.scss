@@ -168,8 +168,7 @@ body {
       }
     }
   }
-  @media (max-width: 998px) {
-  }
+ 
 }
 @media (max-width: 765px) {
   .background-body {
@@ -178,7 +177,6 @@ body {
   }
   .banner-content {
     position: relative;
-    display: flex;
     justify-content: center;
     top: -204px;
     .banner {
@@ -191,6 +189,30 @@ body {
             height: 256px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-content {
+    .banner-inner {
+      .title-content-left-parent {
+        h1 {
+          font-size: 40px !important ;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+      .image-content-right-parent {
+          .image-content-right {
+            width: 100% !important;
+            height: 126%;
+            position: relative;
+            top: 49px;
+            left: 111px;
+          }
       }
     }
   }
