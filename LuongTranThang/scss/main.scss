@@ -166,6 +166,9 @@ $layout-breakpoint-smaller: 820px;
   .hero__title {
     font-size: 3rem;
   }
+  .patch-note__container {
+    top: 0;
+  }
 }
 @media (max-width: $layout-breakpoint-smaller) {
   .patch-note__container {
