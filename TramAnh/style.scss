@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  padding: 80px;
+  font-family: 'Roboto Condensed', sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background-image: url('./TramAnh/image/172049282_56f5282e-6ed7-48a6-8b18-49165ec50a94.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
 
 .news {
-  body {
-    padding: 80px;
-    font-family: 'Roboto Condensed', sans-serif;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* background-image: url('./TramAnh/image/172049282_56f5282e-6ed7-48a6-8b18-49165ec50a94.jpg');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat; */
-  }
-
   .Tin-tuc {
     text-align: center;
     display: flex;
