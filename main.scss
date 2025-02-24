@@ -96,7 +96,7 @@
             align-items: center;
         }
     }
-    .image {
+    .image1 {
         margin-left: 150px;
         width: 160px;
         height: auto;
@@ -118,15 +118,34 @@
         text-align: center;
     }
     .box {
-        border: 1px solid wheat;
+        border: 1px solid rgb(41, 41, 40);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 400px;
-        height: 50px;
+        width: 700px;
+        height: 60px;
         margin: 25px auto;
+        padding: 25px;
+        font-size: 16px;
+        .left {
+            display: inline;
+            margin: 15px;
+        }
+        .right {
+            display: inline;
+            margin: 15px;
+            span {
+                color: white;
+            }
+        }
     }
-       
+    .imgae2 {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
 }
 
 
