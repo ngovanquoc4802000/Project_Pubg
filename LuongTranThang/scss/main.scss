@@ -5,6 +5,7 @@
 .hero {
   height: 100vh;
   background: url("../images/aeca002.jpg") no-repeat center center/cover;
+
   &__overlay {
     height: 100%;
     background: c.$overlay-bg;
@@ -12,73 +13,83 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align:center;
+    text-align: center;
     color: c.$white;
     padding: 20px;
-    position:relative;
+    position: relative;
   }
-    &__title {
-        font-size: 7rem;
-        margin-bottom: 10px;
-    }
-    &__subtitle {
-        font-size: 1.5rem;
-        margin-bottom: 5px;
-    }
-    &__description {
-        font-size: 1.5rem;
-        margin-bottom: 60px;
-    }
-    &__buttons {
-        display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-        align-items: center;
-        gap: 20px;
-      .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:10px;
 
-        padding: 15px 80px;
-        border: 2px solid c.$button-border-color;
-        background: c.$button-bg-color;
-        color: c.$button-color;
-        font-size: 1.5rem;
-        cursor: pointer;
-        transition: all 0.3s;
-        text-decoration: none;
-        position: relative;
-        &:before {
-            content: "";
-        }
-        &:after {
-            content: "";
-            inset-block-end: 3px;
-            inset-inline-end: 3px;
-            width: 15px;
-            height: 15px;
-          position: absolute;
-            border-inline-end: 1px solid #fff;
-            transform: rotate(45deg);
-        }
-        &:hover {
-          background: c.$button-hover-bg-color;
-          color: c.$button-hover-color;
-          border: 2px solid c.$button-hover-border-color;
-          .button__icon {
-            fill: c.$button-hover-color;
-            transition: all 0.3s ;
-          }
-        }
-        &__icon {
-          width: 50px;
-          height: 50px;
-          fill: c.$white;
+  &__title {
+    font-size: 7rem;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      padding: 15px 80px;
+      border: 2px solid c.$button-border-color;
+      background: c.$button-bg-color;
+      color: c.$button-color;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      position: relative;
+
+      &:before {
+        content: "";
+      }
+
+      &:after {
+        content: "";
+        inset-block-end: 3px;
+        inset-inline-end: 3px;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        border-inline-end: 1px solid #fff;
+        transform: rotate(45deg);
+      }
+
+      &:hover {
+        background: c.$button-hover-bg-color;
+        color: c.$button-hover-color;
+        border: 2px solid c.$button-hover-border-color;
+
+        .button__icon {
+          fill: c.$button-hover-color;
+          transition: all 0.3s;
         }
       }
+
+      &__icon {
+        width: 50px;
+        height: 50px;
+        fill: c.$white;
+      }
     }
+  }
 }
 
 //Patch note
@@ -91,9 +102,10 @@
   color: c.$white;
   height: 80vh;
   position: relative;
+
   &__container {
     position: absolute;
-    top:-20%;
+    top: -20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -102,6 +114,7 @@
     text-align: center;
     background: c.$gray;
   }
+
   &__content {
     display: flex;
     justify-content: center;
@@ -110,18 +123,22 @@
     padding: 80px;
     max-width: 800px;
   }
+
   &__icon:hover {
     color: c.$yellow;
     cursor: pointer;
   }
+
   &__title {
     font-size: 3rem;
     margin-bottom: 100px;
   }
+
   &__tabs {
     display: flex;
     gap: 5px;
   }
+
   &__tab {
     padding: 5px 20px;
     background: c.$gray;
@@ -130,35 +147,41 @@
     cursor: pointer;
     transition: all 0.3s;
     text-transform: uppercase;
-    max-width:110px;
+    max-width: 110px;
     border-radius: 4px;
+
     &--active {
       color: c.$yellow;
       border: 1px solid c.$yellow;
     }
   }
+
   &__update {
     margin-top: 40px;
     font-size: 2rem;
   }
+
   &__description {
     margin-top: 40px;
     font-size: 1.3rem;
     color: c.$light-gray;
     text-align: left;
   }
+
   &__image {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width:700px;
+    max-width: 700px;
     overflow: hidden;
+
     img {
       height: 650px;
 
     }
   }
 }
+
 $layout-breakpoint-small: 960px;
 $layout-breakpoint-smaller: 820px;
 
@@ -170,11 +193,12 @@ $layout-breakpoint-smaller: 820px;
     top: 0;
   }
 }
+
 @media (max-width: $layout-breakpoint-smaller) {
   .patch-note__container {
     top: 0;
   }
-  .patch-note__image{
+  .patch-note__image {
     display: none;
   }
 }
